@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 import styles from "./ImageCard.module.css";
 import Modal from "react-modal";
@@ -17,7 +17,6 @@ const customStyles = {
 Modal.setAppElement("#root");
 
 function ImageCard({ image }) {
-  const subtitleRef = useRef(null);
   const [modalIsOpen, setIsOpen] = React.useState(false);
 
   function openModal() {
